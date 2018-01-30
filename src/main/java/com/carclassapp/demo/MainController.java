@@ -16,8 +16,8 @@ public class MainController {
             make = "Jeep";
             color = "green";
             speed = 65;
+            //Are these constructors?
 
-            
         }
 
 
