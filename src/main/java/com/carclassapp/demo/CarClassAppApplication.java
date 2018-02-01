@@ -1,12 +1,39 @@
 package com.carclassapp.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class CarClassAppApplication {
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-	public static void main(String[] args) {
-		SpringApplication.run(CarClassAppApplication.class, args);
+@Controller
+public class MainController {
+	@RequestMapping ("/")
+	public String homePage(){
+
+		vehicle Jeep = new vehicle(); //sets initial parameters; does not need return statements
+		vehicle MBenz = new vehicle("");
+
+		return "index";
 	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
